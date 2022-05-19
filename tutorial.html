@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ESA1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <h6 class="text-center">Projektaufgabe P1: DEA</h6>
+    <h1 class="text-center">Reber Grammar</h1>
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navcol-3">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dokumentation.html">Dokumentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://willamette.edu/~gorr/classes/cs449/reber.html#top" target="_blank">Theorie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorial</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-about" style="text-align: left;">
+                <h2 style="text-align: left;">Tutorial</h2>
+                <h5>Zeichenketten generieren<br></h5>
+                <picture><img src="assets/img/zeichenkette-generieren.gif"></picture>
+                <p>Mithilfe der zwei Buttons können korrekte und falsche Zeichenketten erstellt werden.&nbsp;<br>Beim erneuten Betätigen der Buttons erscheint jeweils ein neues Beispiel.<br></p>
+                <h5>Zeichenketten überprüfen</h5>
+                <p>Hierbei kann ein zufälliges Beispiel aus der Button-Ausgabe, aber auch ein eigenes Beispiel gewählt werden.<br>Für das Tutorial betrachten wir zunächst die Zeichenkette "BTSXXVPSE".<br><br>Die Verarbeitung beginnt immer beim Startzustand {1}. Anschließend werden die enthaltenen Eingaben verarbeitet. Hierfür klicken wir auf die entsprechenden Symbole im Graphen:<br></p><img src="assets/img/korrekte-zeichenkette.gif">
+                <p>Können alle Eingaben erfolgreich verarbeitet und mit der letzten Eingabe der Endzustand erreicht werden, dann handelt es sich um eine <span style="text-decoration: underline;">korrekte</span><strong> </strong>Zeichenkette.<br><br>Aber wie erkennen wir eine falsche Zeichenkette? Hierfür betrachten wir das Beispiel "BSBTTPPXT":<br></p><img src="assets/img/falsche-zeichenkette.gif">
+                <p>Die erste Eingabe "B" kann noch erfolgreich verarbeitet werden. Jedoch kann danach das "S" nicht verarbeitet werden - wir befinden uns in einer Art Sackgasse. Unsere Bedingungen für eine korrekte Zeichenkette können somit nicht erfüllt werden. Dadurch haben wir belegt, dass es sich um eine <span style="text-decoration: underline;">falsche</span> Zeichenkette handelt.<br><img src="assets/img/buttons-screenshot.png"><br>Mit dem "RESET"-Button können wir den Reber-Grammar-Automaten in den Ursprungszustand zurückversetzen und direkt mit der nächsten Überprüfung starten. Mit den anderen Buttons in der Leiste können Anpassungen bei der Ansicht vorgenommen werden.<br></p>
+                <p class="placeholder"></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/random-correct-word.js"></script>
+    <script src="assets/js/random-wrong-word.js"></script>
+</body>
+
+</html>

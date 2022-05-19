@@ -1,0 +1,5 @@
+var arrayC = ["BTSSXXTVVE", "BPVVE", "BTXXVPSE", "BPVPXVPXVPXVVE", "BTSXXVPSE", "BTXSE", "BPTTTTVPSE", "BTSXSE", "BTSSSSSSXSE", "BPTVPXTVPXTTVVE", "BPVPXVVE", "BTXXTVVE", "BPVPSE", "BTSXXVVE", "BTSSXSE", "BPTVPXVVE", "BTXXVVE", "BPTTTTVVE", "BPVPXVPSE", "BPTVPXVPXVPSE", "BTSXXTTVPXVPXVVE", "BTSSSXXTTVPXTVVE", "BPTVVE", "BPTVPSE", "BTSXXTTTTVVE"];
+
+function getItemTrue(){
+    document.getElementById("correct-word").innerHTML = arrayC[Math.floor(Math.random() * arrayC.length)];
+}

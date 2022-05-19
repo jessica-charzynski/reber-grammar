@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>ESA1</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <h6 class="text-center">Projektaufgabe P1: DEA</h6>
+    <h1 class="text-center">Reber Grammar</h1>
+    <nav class="navbar navbar-light navbar-expand-md py-3">
+        <div class="container">
+            <div class="collapse navbar-collapse" id="navcol-3">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dokumentation.html">Dokumentation</a></li>
+                    <li class="nav-item"><a class="nav-link" href="https://willamette.edu/~gorr/classes/cs449/reber.html#top" target="_blank">Theorie</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutorial.html">Tutorial</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-about">
+                <h2>Dokumentation</h2>
+                <h5>Fachliche Dokumentation</h5>
+                <p>Formal kann der DEA als 5-Tupel definiert werden: <br><strong>E = (Q, Σ, δ, q0, F)</strong><br><br>Die Zustandsmenge <strong>Q</strong> lautet {1, 2, 3, 4, 5, 6, 7, 8}.<br>Das Eingabealphabet&nbsp;<strong>Σ&nbsp;</strong>umfasst {B, E, P, S, T, V, X}.<br>Der Startzustand <strong>q0 </strong>ist {1} und die Menge an Endzuständen <strong>F</strong> enthält {8}.&nbsp;<br>Die Übergangsfunktion&nbsp;<strong>δ&nbsp;</strong>kann als Tabelle dargestellt werden:<br></p>
+                <div class="table-responsive" style="width: 300px;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th style="width: 100px;">Q</th>
+                                <th style="width: 100px;"><strong>Σ&nbsp;</strong><br></th>
+                                <th style="width: 100px;">Q</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>→ 1<br></td>
+                                <td>B</td>
+                                <td>2</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>T</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>P</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>S</td>
+                                <td>3</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>X</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>T</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>V</td>
+                                <td>5</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>P</td>
+                                <td>6</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>V</td>
+                                <td>7</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>X</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>S</td>
+                                <td>7</td>
+                            </tr>
+                            <tr></tr>
+                            <tr>
+                                <td>7</td>
+                                <td>E</td>
+                                <td><span style="text-decoration: underline;">8</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <h5>Technische Dokumentation</h5>
+                <p>Das User Interface habe ich mithilfe der&nbsp;Entwicklungsanwendung&nbsp;<a href="https://bootstrapstudio.io/" target="_blank">Bootstrap Studio</a>&nbsp;gestaltet.&nbsp;<br><br>Für die Visualisierung des Automaten habe ich das <a href="https://stately.ai/" target="_blank">XState Visualizer</a>&nbsp;Tool verwendet. <br>Diesen habe ich als Inlineframe in meinen HTML-Code der Startseite eingebunden.&nbsp;<br><br>Für das Erstellen der zufälligen Zeichenketten habe ich zwei kleine JavaScript-Anwendungen geschrieben.<br>Hierfür habe ich ein Array mit 25 korrekten und ein Array mit 25 falschen Zeichenketten erstellt. Aus diesen wird ein zufälliges Beispiel ausgewählt und ausgegeben. Beim erneuten Klicken der Buttons erscheint jeweils ein neues Beispiel.</p>
+                <p class="placeholder"></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/random-correct-word.js"></script>
+    <script src="assets/js/random-wrong-word.js"></script>
+</body>
+
+</html>
