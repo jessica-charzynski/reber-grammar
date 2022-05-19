@@ -2,4 +2,4 @@ var arrayC = ["BTSSXXTVVE", "BPVVE", "BTXXVPSE", "BPVPXVPXVPXVVE", "BTSXXVPSE", 
 
 function getItemTrue(){
     document.getElementById("correct-word").innerHTML = arrayC[Math.floor(Math.random() * arrayC.length)];
-}
+} 
